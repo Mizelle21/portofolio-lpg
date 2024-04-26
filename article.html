@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <link rel="icon" href="1.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      #main-navbar .nav-link {
+        border-bottom: 5px solid #343a40;
+        color: #e2e1e1;
+      }
+      #main-navbar .nav-link:hover,
+      #main-navbar a.active {
+        border-bottom: 5px solid #117a8b;
+        color: white;
+      }
+
+      .main-logo {
+        height: 100px;
+        margin-bottom: -70px; /* Supaya Logo offset ke bawah */
+      }
+
+      .small-logo {
+        height: 60px; /* Untuk Logo kecil di footer */
+      }
+      /* MAIN SLIDER - Halaman Home */
+      #main-navbar {
+        z-index: 2; /* Agar Logo tidak tertutup slider */
+      }
+
+      /* HEADER IMAGE - untuk selain halaman Home */
+
+      .header-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 300px;
+      }
+      .header-overlay {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 300px;
+      }
+      .header-image h1 {
+        margin-top: 120px;
+      }
+
+      /* HEADER IMAGE - gambar untuk setiap halaman  */
+
+      #article-header {
+        background-image: url("4.jpg");
+        background-position-y: -200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="main-navbar" class="navbar navbar-expand-md navbar-dark bg-dark py-0 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="Ilkoom.index.html">
+          <span class="d-none">ILKOOM</span>
+          <img src="2.jpg" class="main-logo d-none d-md-inline" alt="ilkoom logo" />
+          <img src="3.jpg" class="small-logo d-inline d-md-none" alt="ilkoom logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link p-4" href="Ilkoom.index.html" style="text-decoration: none">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-4" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-4 active" href="article.html">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-4" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-4" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER IMAGE -->
+    <header id="article-header" class="header-image text-white d-none d-md-block">
+      <div class="header-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="display-1">Article</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum aperiam in facilis dicta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ARTICLE CONTAINER -->
+    <section id="article">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <!-- BREADCRUMB -->
+            <nav>
+              <ol class="breadcrumb bg-white m1-0 mt-4">
+                <li class="breadcrumb-item">
+                  <a href="Ilkoom.index.html" class="text-info">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="blog.html" class="text-info">Blog</a>
+                </li>
+                <li class="breadcrumb-item active">Quisque porta Nam sed tellus</li>
+              </ol>
+            </nav>
+            <hr />
+
+            <!-- MAIN ARTICLE -->
+            <article class="py-2">
+              <h1>Quisque porta Nam sed tellus</h1>
+              <div class="text-muted">
+                <small> Ilyas Maulana </small> - <small> 14 September 2018 </small> -
+                <small> 4 Comments</small>
+              </div>
+              <img src="6.jpg" alt="" class="img-fluid p-4" />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate exercitationem dolore, earum consequuntur aliquam sunt, porro dolores maiores aperiam excepturi ipsa quis quos suscipit a expedita explicabo sed iusto
+                dolorem doloribus illum? Eaque perspiciatis rem totam molestiae, nam voluptas sequi?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis laborum voluptatem itaque possimus id sed unde pariatur nisi, enim vitae adipisci dolorem! Quod quam minima hic recusandae facilis eum quaerat officiis,
+                repellat minus ullam cum voluptates ipsa id magnam? Necessitatibus.
+              </p>
+              <blockquote class="blockquote">
+                <p class="mb-0">"Class aptent taciti sociosqu ad litora torquent per conubia, inceptos hymenaeos "</p>
+              </blockquote>
+              <footer class="blockquote-footer">
+                <cite> John Doe</cite>
+                (CEO of Example.com)
+              </footer>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores totam architecto exercitationem quas. Aspernatur molestias iusto voluptatibus et cumque earum sint quis eligendi dignissimos obcaecati nobis ipsum nesciunt,
+                porro, aliquam ullam vitae voluptates repellendus. Eius sequi voluptates qui debitis. Quos animi magnam sint itaque in impedit suscipit aliquid recusandae deleniti temporibus distinctio iste nesciunt eos adipisci, asperiores
+                voluptas reiciendis reprehenderit consequatur ex quia doloribus similique? Maiores quisquam a hic pariatur optio harum, qui consequatur voluptate cumque, debitis adipisci dicta est? Veritatis minus, temporibus ipsam
+                cupiditate sed quam cumque corporis totam ipsa ad, magnam aperiam consectetur atque quaerat doloremque quia maxime..
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptatem quis a quas nihil atque doloremque iusto, quod tempora cum quae natus adipisci libero, aliquam fugiat nesciunt. Fugit eaque nisi amet veniam
+                repellendus modi laboriosam est aperiam mollitia vitae, tenetur id minus quasi nam sunt. Assumenda molestiae, itaque aut voluptates unde deserunt eius repellat porro sunt magnam ab, molestias veritatis rem, quidem beatae
+                laborum ipsa sint perferendis exercitationem labore soluta dolorum cupiditate! Reprehenderit fugiat dolores hic esse earum eum recusandae officiis dolorem sit, culpa ab sapiente voluptatum, illo, maiores veniam reiciendis
+                consequatur rerum. Dolorum, quis, alias non perspiciatis sit consequatur, quisquam possimus explicabo ipsam ut voluptatibus maxime blanditiis! Vel illo quaerat, animi quia culpa obcaecati dolores repellat perferendis
+                cupiditate aliquam ea inventore pariatur ad iusto amet, harum quo optio! Neque illum ullam officia quod id quisquam molestiae magnam laborum! Amet eaque asperiores tempora expedita nobis quibusdam itaque omnis nesciunt
+                numquam dolorum, cum ipsam quam possimus fugit molestiae dolores accusamus, molestias exercitationem. Est impedit dolor animi mollitia! Nam beatae odio nemo expedita explicabo ex libero autem incidunt veniam voluptatum ad
+                laudantium non sequi, quisquam velit? Dignissimos cupiditate sunt dolor. Inventore quam, non error culpa eos sequi quis saepe labore minima fuga aspernatur minus perspiciatis impedit repellendus asperiores reiciendis
+                pariatur eveniet magnam dignissimos harum debitis. Fugiat quos ipsam recusandae, facilis eum cupiditate cum sapiente reprehenderit alias quidem explicabo quo, perspiciatis necessitatibus excepturi molestias aut possimus
+                aliquid. Quasi eligendi, minima eveniet enim facilis dolores, at architecto cum voluptates voluptas consectetur unde quibusdam dolorem.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio molestias, odit eos, impedit sint expedita repellendus deleniti architecto assumenda atque esse quibusdam quaerat? Nulla, assumenda ducimus. Autem
+                quos fuga aspernatur quo odio magnam, aliquid similique non soluta ad dolores, sapiente maxime, eligendi accusantium. Blanditiis qui nobis iusto ex magnam deleniti corrupti, explicabo quod ullam pariatur. Eum, voluptatibus
+                porro dolor debitis voluptates hic neque, eveniet optio nisi eligendi repellendus ratione veritatis sapiente necessitatibus impedit, odio dolore tempora ab nulla. Quo perspiciatis placeat eligendi ipsa nostrum error
+                obcaecati modi ut cupiditate, exercitationem sed quae repellendus ipsum? Explicabo repudiandae optio provident accusamus asperiores, odit ea quod et dolorem adipisci enim nam, minus sed obcaecati, praesentium fugit hic. Ad
+                laudantium veritatis, totam deleniti quidem nisi ipsam nesciunt praesentium tenetur sapiente, officia dolorem asperiores! Ea illo ad alias deserunt enim ullam corrupti maxime laboriosam officiis labore consectetur
+                praesentium porro nam, ipsam iusto iure, architecto facilis! Necessitatibus nobis aperiam enim sunt perferendis deleniti incidunt magnam, ipsam provident voluptates! Accusamus inventore illo illum minus sed ullam quae iste.
+                Blanditiis nam est facilis, sit, dolorum impedit, optio distinctio nobis dolores fugit cupiditate? Eum ex repellat hic, in ut veniam consectetur non, ducimus omnis, facere labore laborum quas?
+              </p>
+            </article>
+
+            <!-- AUTHOR -->
+            <div class="media py-4">
+              <img class="mr-3 img-thumbnail img-fluid" src="neyon.jpg" style="height: 180px" />
+              <div class="media-body">
+                <h3><a href="#" class="text-info">Naeyon Aespa</a></h3>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+                lacinia congue felis in faucibus.
+                <div class="pt-4">
+                  <a href="#" class="text-info mr-2">
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="#" class="text-info mr-2">
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                  <a href="#" class="text-info mr-2"> <i class="fab fa-instagram fa-2x"></i> </a>
+                  <a href="#" class="text-info mr-2">
+                    <i class="fab fa-google-plus fa-2x"></i>
+                  </a>
+                  <a href="#" class="text-info mr-2">
+                    <i class="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ARTICLE COMMENTS -->
+            <section class="py-4">
+              <h2>Comments</h2>
+              <div class="media mt-4">
+                <a href="#">
+                  <img class="mr-3 rounded-circle img-thumbnail" src="atin.jpg" style="width: 50px; height: 50px" />
+                </a>
+                <div class="media-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="mt-0">Kathrina</h5>
+                    <small class="text-muted">15 September 2018</small>
+                  </div>
+                  <p>Cras sit amet nibh libero, in gravida nulla...</p>
+                  <p>Morbi leo mi, nonummy eget tristique non, rhoncus...</p>
+                  <div>
+                    <a href="#" class="text-info">Reply</a>
+                  </div>
+                  <div class="media mt-4">
+                    <a href="#">
+                      <img class="mr-3 rounded-circle img-thumbnail" src="mici.jpg" style="width: 50px; height: 50px" />
+                    </a>
+                    <div class="media-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mt-0">Michelle Alexandra</h5>
+                        <small class="text-muted">16 September 2018</small>
+                      </div>
+                      <p>Nemo enim ipsam voluptatem quia voluptas sit...</p>
+                      <div>
+                        <a href="#" class="text-info">Reply</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media mt-4">
+                    <a href="#">
+                      <img class="mr-3 rounded-circle img-thumbnail" src="karina.jpg" style="width: 50px; height: 50px" />
+                    </a>
+                    <div class="media-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mt-0">Karina Aespa</h5>
+                        <small class="text-muted">17 September 2018</small>
+                      </div>
+                      <p>Class aptent taciti sociosqu ad litora torquent...</p>
+                      <p>Aliquam in lorem sit amet leo accumsan lacinia...</p>
+                      <div class="my-2">
+                        <a href="#" class="text-info"> Reply</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="media mt-3">
+                <a href="#">
+                  <img class="mr-3 rounded-circle img-thumbnail" src="rosa.jpg" style="width: 50px; height: 50px" />
+                </a>
+                <div class="media-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="mt-0">Rosa</h5>
+                    <small class="text-muted">20 September 2018</small>
+                  </div>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit asper...</p>
+                  <div class="my-2">
+                    <a href="#" class="text-info">Reply</a>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </section>
+            <!-- REPLY COMMENT -->
+            <section class="pt-3 pb-5">
+              <h4>Leave a Reply</h4>
+              <p>Your email address will not be published. Required fields are marked *</p>
+              <form>
+                <div class="form-group">
+                  <label for="isianKomentar">Comment *</label>
+                  <textarea class="form-control" id="isianKomentar"></textarea>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-6">
+                    <input type="text" class="form-control" id="inputName" placeholder="Name *" />
+                  </div>
+
+                  <div class="form-group col-6">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email *" />
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-info" value="Post Comment" />
+              </form>
+            </section>
+            <!-- Side bar -->
+            <div id="sidebar" class="col-md-4 mt-4">
+              <!-- Advertisment -->
+              <div class="row py-4 sticky-top">
+                <div class="col text-center">
+                  <h3>Advertisement</h3>
+                  <a href="#">
+                    <img class="mr-3 img-fluid" src="icel.jpg" />
+                  </a>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-white bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center text-md-left">
+            <a href="Ilkoom.index.html"> <img src="1.png" style="height: 60px" /></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque, esse modi maxime veniam nulla delectus dolorem</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <h5>Community</h5>
+            <ul class="list-unstyled">
+              <li><a style="text-decoration: none" href="#" class="text-white">Activity</a></li>
+              <li><a style="text-decoration: none" href="#" class="text-white">Members</a></li>
+              <li><a style="text-decoration: none" href="#" class="text-white">Groups</a></li>
+              <li><a style="text-decoration: none" href="#" class="text-white">Forums</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-center">
+            <h5>Our Services</h5>
+            <ul class="list-unstyled">
+              <li><a style="text-decoration: none" href="#" class="text-white">Our mission</a></li>
+              <li><a style="text-decoration: none" href="#" class="text-white">Help/Contact Us</a></li>
+              <li><a style="text-decoration: none" href="#" class="text-white">Privacy Policy</a></li>
+              <li><a style="text-decoration: none" href="#" class="text-white">Cookie Policy</a></li>
+              <li><a style="text-decoration: none" href="#" class="text-white">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-center text-md-left">
+            <h5>Hubungi Kami</h5>
+            <div class="text-nowrap"><i class="fas fa-envelope fa-fw mr-3"></i> andre@ilkoom.com</div>
+            <div class="text-nowrap"><i class="fas fa-phone fa-fw mr-3"></i> (021) 123456</div>
+            <div class="text-nowrap"><i class="fas fa-globe fa-fw mr-3"></i> www.ilkoom.com</div>
+          </div>
+        </div>
+        <div class="row mt-3 mt-md-0">
+          <div class="col-md-3 mr-md-auto text-center text-md-left"><small>&copy; ILKOOM 2018</small></div>
+          <div class="col-md-3 text-center text-md-left">
+            <div>
+              <a href="#" class="text-white mr-2"> <i class="fab fa-facebook fa-lg"></i> </a>
+              <a href="#" class="text-white mr-2"> <i class="fab fa-twitter fa-lg"></i> </a>
+              <a href="#" class="text-white mr-2"> <i class="fab fa-instagram fa-lg"></i> </a>
+              <a href="#" class="text-white mr-2"> <i class="fab fa-google-plus fa-lg"></i> </a>
+              <a href="#" class="text-white mr-2"> <i class="fab fa-github fa-lg"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- <script src="js/jquery-3.3.1.js"></script> -->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
